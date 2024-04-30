@@ -1,0 +1,253 @@
+body{
+    margin: 30px 3px;
+}
+
+.hide{
+    display: none;
+}
+
+/* for the main div for the body of the expense tracker */
+.maindiv{
+    border: 3px solid orange;
+    max-width: 720px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* dashboard of the div */
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username{
+    color: orange;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.card{
+    border: 2px solid green;
+}
+
+/* Now the transaction log */
+.transaction-container{
+    margin: 22px 10px;
+}
+.transaction-row{
+    margin: 10px;
+    padding: 7px 5px;
+    /* box-shadow: 4px -1px 20px 6px #333; */
+    box-shadow:  8px 6px 0px #e0dada;
+
+    border-radius: 12px;
+
+}
+
+.transactdate{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.date hr{
+    width: 95%;
+    margin: 0px auto;
+}
+
+.transact-{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.cateogary{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.traccount{
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px;
+}
+
+.sum{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.spent{
+    color: red;
+}
+
+.received{
+    color: green;
+}
+
+
+/* Style for the transaction form */
+/* .transaction-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+} */
+
+/* Position the form above everything */
+.transaction-form {
+    position:relative;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: white; /* Optionally, add a background color */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+
+/* Style for form labels */
+.transaction-form label {
+    font-weight: bold;
+}
+
+/* Style for form inputs and selects */
+.transaction-form input[type="text"],
+.transaction-form input[type="number"],
+.transaction-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for form buttons */
+.transaction-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for hiding the form initially */
+.hide {
+    display: none;
+}
+
+
+
+.plus{
+    /* position: relative; */
+    color: orange;
+    /* right: -1120px; */
+}
+
+.add-transaction{
+    text-align: center;
+}
+
+
+.add2{
+    margin: 10px;
+    text-align: right;
+}
+
+
+/* media querries */
+
+/* Media query for max width 350px */
+@media screen and (max-width: 350px) {
+    /* CSS rules for s*/
+
+    .dashboard{
+        display: block;
+        text-align: center;
+    }
+    .username{
+        font-size: 1.5rem;
+    }
+    .plus {
+        right: -70px; /* Adjust as needed */
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+
+    .cateogary,.sum,.traccount{
+        font-size: 1rem;
+    }
+
+    .transact-{
+        padding: 0px 5px;
+    }
+}
+
+/* Media query for width between 350px and 470px */
+@media screen and (min-width: 351px) and (max-width: 470px) {
+    /* CSS rules for screens with width between 351px and 470px */
+    body{
+        padding: 20px;
+    }
+
+    .dashboard{
+        display: block;
+        text-align: center;
+    }
+    .username{
+        font-size: 1.5rem;
+    }
+    .plus {
+        right: -70px; /* Adjust as needed */
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+
+   
+    .transact-{
+        padding: 0px 5px;
+    }
+}
+
+/* Media query for width between 470px and 590px */
+@media screen and (min-width: 471px) and (max-width: 590px) {
+    /* CSS rules for screens with width between 471px and 590px */
+    .plus {
+        right: -150px; /* Adjust as needed */
+    }
+}
+
+/* Media query for width between 590px and 760px */
+@media screen and (min-width: 591px) and (max-width: 760px) {
+    /* CSS rules for screens with width between 591px and 760px */
+    .plus {
+        right: -300px; /* Adjust as needed */
+    }
+}
+
+/* Media query for width between 760px and 920px */
+@media screen and (min-width: 761px) and (max-width: 920px) {
+    /* CSS rules for screens with width between 761px and 920px */
+    .plus {
+        right: -500px; /* Adjust as needed */
+    }
+}
